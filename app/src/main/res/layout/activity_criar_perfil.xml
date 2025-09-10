@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarPerfil">
+
+    <TextView
+        android:id="@+id/personalize"
+        android:layout_width="315dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Personalize o perfil de:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="134dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693"
+        app:srcCompat="@drawable/superman" />
+
+    <CheckBox
+        android:id="@+id/chRajadasEnergia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rajadas de Energia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
+
+    <CheckBox
+        android:id="@+id/chSuperForca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super-Força"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <CheckBox
+        android:id="@+id/chSuperVelocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super Velocidade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Escolha seu avatar:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <RadioGroup
+        android:id="@+id/rgOpcoes"
+        android:layout_width="213dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239">
+
+        <RadioButton
+            android:id="@+id/rbtnHeroi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Herói" />
+
+        <RadioButton
+            android:id="@+id/rbtnVilao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vilão" />
+
+        <RadioButton
+            android:id="@+id/rbtnAntiHeroi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anti-Heroi" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chTelepatia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepatia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/heroiOu.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Oque você se considera?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <CheckBox
+        android:id="@+id/chVoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Informe seus poderes:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <Button
+        android:id="@+id/btnFicha"
+        android:layout_width="129dp"
+        android:layout_height="74dp"
+        android:text="Gerar Ficha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
